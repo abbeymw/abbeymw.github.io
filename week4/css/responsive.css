@@ -1,0 +1,26 @@
+
+@media only screen and (min-width: 650px) {
+	.top-nav ul li{
+		display: inline-block;
+	}
+
+	.top-nav ul {
+		text-align: center;
+	}
+	.photo-grid {
+
+	}
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+	.logo {
+		float: left;
+	}
+	.top-nav ul {
+		float: right;
+		padding: 15px;
+	}
+
+}

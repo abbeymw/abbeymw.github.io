@@ -1,0 +1,51 @@
+.hide {
+	display: none;
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	background: none;
+	border-radius: 50%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-right: -150px;
+
+	border: 10px solid rgba(0, 0, 0, 0.2);
+	border-top-color: #3fc1c9;
+
+	animation: spinit 0.5s infinite ease-in;
+
+	left: 40%;
+}
+
+.box--bkg {
+	border:0;
+	background: #3fc1c9;
+	animation: changebkg 3s infinite linear;
+
+	left: 60%;
+}
+
+@keyframes spinit {
+	100% {
+		transform: rotatez( 360deg);
+	}
+}
+
+
+@keyframes changebkg {
+	33% {
+		background:#364f6b;
+	}
+	67% {
+		background:#fc5185;
+	}
+	100% {
+		background:#3fc1c9;;
+	}
+}
+
