@@ -2,10 +2,12 @@
 @media only screen and (min-width: 650px) {
 	.top-nav ul li{
 		display: inline-block;
+		/*border-top: 1px solid red;*/
 	}
 
 	.top-nav ul {
 		text-align: center;
+
 	}
 	.photo-grid {
 		display: grid;
@@ -53,6 +55,10 @@
 	.top-nav ul {
 		float: right;
 		/* padding: 15px; */
+	}
+	.top-nav ul li{
+		border-top: 0px;
+		padding-top: 15px;
 	}
 	.photo-grid {
 		display: grid;
