@@ -44,15 +44,16 @@ nav {
 	background: #008000;
 }
 
-nav ul {
+/*nav ul {
   text-align: center;
-}
+}*/
 
 nav ul li {
 	display: inline-block;
 }
 
 nav li a {
+	text-align: center;
 	background: black;
 	padding-left: 50px;
 	padding-right: 50px;
