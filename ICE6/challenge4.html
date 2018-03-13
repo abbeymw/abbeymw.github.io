@@ -7,6 +7,7 @@
     <style>
     .errormsg {
         /*font: Use a cool Google font*/
+			font-family: cursive;
     	color:red;
     	display:none; }
     </style>
@@ -14,41 +15,27 @@
     <script type="text/javascript">
     function checkForm(){
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
-			var fullname = document.getElementById( "fullname").value;
-			var address = document.getElementById( "streetaddr").value;
+			var fullname = document.getElementById('fullname').value;
+			var address = document.getElementById('streetaddr').value;
 
-			var nameerrormsg = document.getElementById( "nameerrormsg").value;
-			var addrerrormsg = document.getElementById( "addrerrormsg").value;
+			var nameerrormsg = document.getElementById('nameerrormsg');
+			var addrerrormsg = document.getElementById('addrerrormsg');
 
-			var nameerrormsg = nameerrormsg.style.display = "none";
-			var addrerrormsg = addrerrormsg.style.display = "none";
-
-			// console.log(fullname);
-			// console.log(address);
-
-			// if(fullname && address) {
-			// 	console.log("success");
-			// 	// return true;
-			// }
-			// else {
-			// 	console.log("fail");
-			// 	// return false;
-			// }
-			var isValid = true;
-			if(!fullname) {
-				// console.log("full name was not provided");
+			if (fullname == "" && address == ""){
 				nameerrormsg.style.display = "block";
-				isValid = false;
-				// return true;
-			}
-			if(!address){
-				// console.log("Address was not provided");
 				addrerrormsg.style.display = "block";
-				isValid = false;
-				// return false;
+				return false;
 			}
-			// console.log(isValid);
-			return isValid;
+			if(fullname == "" && address.length>0) {
+				nameerrormsg.style.display = "block";
+				addrerrormsg.style.display = "none";
+				return false;
+			}
+			if(address == "" && fullname.length>0){
+				nameerrormsg.style.display = "none";
+				addrerrormsg.style.display = "block";
+				return false;
+			}
 
 		}
     </script>
