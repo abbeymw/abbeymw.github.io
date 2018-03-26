@@ -1,0 +1,130 @@
+
+@media only screen and (min-width: 650px) {
+	.top-nav ul li{
+		display: inline-block;
+		/*border-top: 1px solid red;*/
+	}
+
+	.top-nav ul {
+		text-align: center;
+
+	}
+	.content img {
+		height: 200px;
+			width: 200px;
+	}
+
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.a {
+		grid-column-start: 1;
+		grid-column-end:1;
+	}
+	.b {
+		grid-column-start: 2;
+		grid-column-end:2;
+	}
+	.c {
+		grid-column-start: 1;
+		grid-column-end: 1;
+	}
+	.d {
+		grid-column-start: 2;
+		grid-column-end: 2;
+	}
+	.e {
+		grid-column-start: 1;
+		grid-column-end: 1;
+	}
+	.f {
+		/* light blue */
+		grid-column-start: 2;
+		grid-column-end: 2;
+	}
+	.g {
+		/* red */
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+	.name {
+		float: left;
+		padding-left: 30px;
+		background-color: white;
+	}
+	.content img {
+		height: 300px;
+			width: 300px;
+	}
+	.top-nav ul {
+		/* float: clear; */
+		/* float: right; */
+		padding: 32px;
+		text-align: right;
+
+	}
+	.top-nav ul li{
+		/* padding-top: 15px; */
+	}
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	.a {
+		/* grommet */
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+	.b {
+		/* matzo */
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+	.c {
+		/* give */
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+	.d {
+		/* kiddos */
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+	.e {
+		/* football */
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+	.f {
+		/* beavertail */
+		/* grid: 3/4/2/2; */
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+	.g {
+		/* cottage */
+		grid-column: 1/2;
+		grid-row: 3/3;
+	}
+
+}
