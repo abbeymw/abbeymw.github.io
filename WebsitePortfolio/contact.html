@@ -9,6 +9,7 @@
 	<link rel="icon" href="img/logo.png"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 </head>
 <body>
@@ -30,9 +31,25 @@
 		<p style="text-align:center;">If you are interested in getting more info about Michigan GIVErs, feel free to contact us!</p><br>
 		<p><strong>Contact details below:</strong><p><br>
 		<p>michigangivers.interest@umich.edu</p>
-		<p>michigangivers.e-board@umich.edu</p><br>
-</div>
+		<p>michigangivers.e-board@umich.edu</p><br><br>
+		<p>We typically hold our mass meetings in the Samuel T Dana Building located below on the map</p><br>
+	</div>
 
+	<div class = "contentboxes">
+		            <script>  /* source: https://stackoverflow.com/questions/16349476/map-isnt-showing-on-google-maps-javascript-api-v3-when-nested-in-a-div-tag */
+		                function initialize() {
+		                    var map = document.getElementById('map');
+		                    var specs = {
+		                        center: new google.maps.LatLng(42.277309, -83.736604),
+		                        zoom: 17,
+		                        mapTypeId: google.maps.MapTypeId.ROADMAP
+		                    }
+		                    var map_show = new google.maps.Map(map, specs);
+		                }
+		                google.maps.event.addDomListener(window, 'load', initialize);
+		            </script>
+		    <div id="map"></div>
+	</div>
 
 <footer class="footer">
 	<a href='https://www.facebook.com/MichiganGIVErs/' target="_blank"><img src="img/fb.png" alt="Facebook Link" style="width:40px;height:40px;"></a>
