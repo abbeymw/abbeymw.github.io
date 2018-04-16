@@ -11,10 +11,24 @@
 
 <h1>Abbey Warren</h1>
 <div class="pics">
-  <img src="images/examPic.JPG" alt="colleen and friends">
-  <img src="images/UMSI-logo.jpg" alt="UMSI logo">
+  <div class="block first"><img src="images/examPic.JPG" alt="colleen and friends"></div>
+  <div class="block second"><img src="images/UMSI-logo.jpg" alt="UMSI logo"></div>
+	<!-- <img src="images/examPic.JPG" alt="colleen and friends">
+	<img src="images/UMSI-logo.jpg" alt="UMSI logo"> -->
 </div>
+<button id="hide">Hide image</button>
+<button id="show">Show image</button>
 
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".first").hide();
+    });
+    $("#show").click(function(){
+        $(".first").show();
+    });
+});
+</script>
 
 
 </body>
