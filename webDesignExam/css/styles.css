@@ -1,0 +1,10 @@
+img {
+  width: 50%;
+  /* display: inline-block; */
+  border: 3px solid blue;
+  padding: 5%;
+}
+
+.pics {
+  display: inline-block;
+}
