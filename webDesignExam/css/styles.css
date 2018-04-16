@@ -11,20 +11,7 @@ img {
   display: inline-block;
 }
 
-/* .pics {
-  display: inline-block;
-} */
-
 
 .pics {
   display: flex;
-}
-
-
-.block {
-  width:50%;
-  display: inline-block;
-  /* margin: 0; */
-  /* float: left; */
-  /* flex: 50%; */
 }
