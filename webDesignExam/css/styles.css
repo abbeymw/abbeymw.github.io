@@ -1,7 +1,14 @@
+body {
+   background-image: url("../images/circles-dark.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
 img {
   width: 50%;
   border: 5px solid blue;
   padding: 5%;
+  display: inline-block;
 }
 
 /* .pics {
@@ -15,9 +22,9 @@ img {
 
 
 .block {
-  /* width:50%; */
+  width:50%;
   display: inline-block;
   /* margin: 0; */
   /* float: left; */
-  flex: 50%;
+  /* flex: 50%; */
 }
